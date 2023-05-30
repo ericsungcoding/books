@@ -16,6 +16,13 @@
         </div>
         <div class="main-book">
             <div class="col">
+                {% if messages %}
+                    <ul>
+                    {% for message in messages %}
+                        <li>{{message}}</li>
+                    {% endfor %}
+                    </ul>
+                {% endif %}
                 {% if book.uploader.id == request.session.user_id %}
                     <form action="/books/{{book.id}}/update" method="POST">
                         {% csrf_token %}
@@ -40,14 +47,14 @@
                 <ul>
                     {% for user in book.users_who_like.all %}
                         {% if user.id == request.session.user_id %}
-                            <li>{{user.first_name}} {{user.last_name}} <em><a href="/books/{{book.id}}/unlike">Un-Favorite</a></em></li>
+                            <li>{{user.first_name}} {{user.last_name}} <a href="/books/{{book.id}}/unlike"><em>Un-Favorite</em></a></li>
                         {% else %}
                             <li>{{user.first_name}} {{user.last_name}}</li>
                         {% endif %}
                     {% endfor %}
-                </ul>
+                </ul><br>
                 {% if user not in book.users_who_like.all %}
-                    <p><em><a href="/books/{{book.id}}/like">Add to Favorites</a></em></p>
+                    <p class="like"><em><a href="/books/{{book.id}}/like">Add to Favorites</a></em></p>
                 {% endif %}
             </div>
         </div>

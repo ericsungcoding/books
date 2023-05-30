@@ -29,14 +29,15 @@
     }
 
         .login input[type=text], .login input[type=password] {
-            box-sizing: border-box;
-            padding: 10px 2px;
+            padding: 5px 20px;
             width: 60%;
+            box-sizing: border-box;
         }
 
         .login button {
             width: 100px;
             padding: 5px;
+            margin-top: 5px;
         }
 
         .login h1 {
@@ -47,7 +48,6 @@
     width: 960px;
     height: 600px;
     padding: 20px;
-    outline: 1px solid pink;
 }
 
     .container .nav {
@@ -102,6 +102,7 @@
 
         .main .col ul {
             list-style-type: none;
+            font-style: italic;
             margin-bottom: 10px;
             border: 1px black solid;
             padding: 5px;
@@ -145,6 +146,14 @@
             margin-bottom: 20px;
         }
 
+        .main-book .col ul {
+            list-style-type: none;
+            font-style: italic;
+            margin-bottom: 10px;
+            border: 1px black solid;
+            padding: 5px;
+        }
+
         .main-book .col button {
             width: 80px;
             padding: 5px;
@@ -152,9 +161,9 @@
 
     .main-book input[type=text] {
         width: 100%;
-        padding: 12px 20px;
+        padding: 5px 12px;
         box-sizing: border-box;
-        margin: 8px 0;
+        margin: 4px 0;
     }
 
     .main-book .col p {
@@ -179,4 +188,17 @@
 
         .main-book .col-2 ul {
             list-style-type: none;
+        }
+
+            .main-book .col-2 ul li{
+                margin-bottom: 15px;
+            }
+
+        .main-book .col-2 a {
+            text-decoration: none;
+            background-color: whitesmoke;
+            color: black;
+            padding: 5px 15px;
+            border: 1px black solid;
+            margin: 5px;
         }

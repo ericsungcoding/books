@@ -66,6 +66,11 @@ def book(request, book_id):
     return render(request, "books/book.html", context)
 
 def update(request, book_id):
+    errors = Book.objects.book_validator(request.POST)
+    if errors:
+        for val in errors.values():
+            messages.error(request, val)
+        return redirect(f"/books/{book_id}")
     book = Book.objects.get(id=book_id)
     book.title = request.POST["title"]
     book.desc = request.POST["desc"]
