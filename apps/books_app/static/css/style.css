@@ -1,0 +1,204 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Times, serif;
+}
+
+.wrapper {
+    width: 900px;
+    height: 500px;
+    margin: 20px auto;
+}
+
+    .wrapper ul {
+        text-align: center;
+        list-style-type: none;
+        padding: 10px;
+        border: 1px black solid;
+    }
+
+    .wrapper .login {
+        width: 300px;
+        height: 400px;
+        outline: 1px black solid;
+        display: inline-block;
+        vertical-align: top;
+        margin: 40px;
+        text-align: center;
+        padding: 20px;
+    }
+
+        .login input[type=text], .login input[type=password] {
+            padding: 5px 20px;
+            width: 60%;
+            box-sizing: border-box;
+        }
+
+        .login button {
+            width: 100px;
+            padding: 5px;
+            margin-top: 5px;
+        }
+
+        .login h1 {
+            margin: 15px;
+        }
+
+.container {
+    width: 960px;
+    height: 600px;
+    padding: 20px;
+}
+
+    .container .nav {
+        width: 900px;
+        height: 100px;
+        margin: 10px;
+        padding: 30px;
+        box-sizing: border-box;
+        border: 1px black solid;
+        display: flex;
+        justify-content: space-between;
+    }
+
+        .container .nav a {
+            font-size: 18px;
+            color: black;
+            font-style: italic;
+            margin: 10px;
+            text-decoration: none;
+        }
+
+.container .main {
+    width: 900px;
+    height: 450px;
+    margin: 10px;
+    box-sizing: border-box;
+    border: 1px black solid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+    .main .col, .main .col-2 {
+        width: 350px;
+        height: 350px;
+        margin: 10px;
+        padding: 30px;
+        box-sizing: border-box;
+        border: 1px black solid;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+        .main .col h1, .main .col-2 h1 {
+            margin-bottom: 20px;
+        }
+
+        .main .col button {
+            width: 80px;
+            padding: 5px;
+        }
+
+        .main .col ul {
+            list-style-type: none;
+            font-style: italic;
+            margin-bottom: 10px;
+            border: 1px black solid;
+            padding: 5px;
+        }
+
+    .main .col-2 {
+        overflow: scroll;
+    }
+
+        .main .col-2 h3 {
+            color: black;
+            margin-bottom: 10px;
+        }
+
+        .main .col-2 p {
+            margin-bottom: 5px;
+        }
+
+.container .main-book {
+    width: 900px;
+    height: 450px;
+    margin: 10px;
+    box-sizing: border-box;
+    border: 1px black solid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+    .main-book .col, .main-book .col-2 {
+        width: 350px;
+        height: 350px;
+        margin: 10px;
+        padding: 30px;
+        box-sizing: border-box;
+        border: 1px black solid;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+        .main-book .col h1, .main-book .col-2 h1 {
+            margin-bottom: 20px;
+        }
+
+        .main-book .col ul {
+            list-style-type: none;
+            font-style: italic;
+            margin-bottom: 10px;
+            border: 1px black solid;
+            padding: 5px;
+        }
+
+        .main-book .col button {
+            width: 80px;
+            padding: 5px;
+        }
+
+    .main-book input[type=text] {
+        width: 100%;
+        padding: 5px 12px;
+        box-sizing: border-box;
+        margin: 4px 0;
+    }
+
+    .main-book .col p {
+        margin-bottom: 5px;
+    }
+
+    .main-book .col a {
+        width: 40px;
+        font-size: 15px;
+        text-decoration: none;
+        color: black;
+        padding: 5px 20px;
+        margin: 10px 0;
+        background-color: whitesmoke;
+        border: 1px black solid;
+        display: block;
+    }
+
+    .main-book .col-2 {
+        overflow: scroll;
+    }
+
+        .main-book .col-2 ul {
+            list-style-type: none;
+        }
+
+            .main-book .col-2 ul li{
+                margin-bottom: 15px;
+            }
+
+        .main-book .col-2 a {
+            text-decoration: none;
+            background-color: whitesmoke;
+            color: black;
+            padding: 5px 15px;
+            border: 1px black solid;
+            margin: 5px;
+        }
